@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Abstract design</title>
 	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -48,12 +49,13 @@
 
 			</div>
 
+
 			<div class="slogan">
-				<h1 class="slogan__logo">Abstract &#169</h1>
-				<span class="slogan__txt">Abstract iroh - идея абстракции, свободы, градиента & пример - уникального дизайна</span>
-				<button class="slogan__btn">
-					Подробнее
-				</button>
+				<h1 class="slogan__logo" data-aos="fade-down" data-aos-duration="1000">Abstract&#169</h1>
+				<span class="slogan__txt" data-aos="fade-down">Abstract iroh - идея абстракции, свободы, градиента & пример - уникального дизайна</span>
+				<a target="__bla" class="slogan__btn" href="https://instagram.com/newiroh" data-aos="fade-down">
+					Перейти
+				</a>
 			</div>
 		</div>
 
@@ -64,18 +66,18 @@
 
 			<div class="aboutme__txt">
 				<h2 class="aboutme__txt-slogan">Обо мне</h2>
-				<span class="aboutme__txt-title">кто я такой</span>
+				<span class="aboutme__title">кто я такой</span>
 				<ul class="aboutme_list">
-					<li class="aboutme__item"> - Эксперт по созданием сайта и разработки uiux дизайна.</li>
-					<li class="aboutme__item"> - 2 года практики и большой опыт создания сайтов с 0.</li>
-					<li class="aboutme__item"> - В 15 лет создал и запустил свой первый сайт</li>
-					<li class="aboutme__item"> - Устроился в IT компанию, но понял что могу развиваться самостоятельно</li>
-					<li class="aboutme__item"> - Основал образованительную компанию IROH</li>
-					<li class="aboutme__item"> - обучаю людей по созданию сайтов и uiux дизайнов</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="400"> - Эксперт по созданием сайта и разработки uiux дизайна.</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="600"> - 2 года практики и большой опыт создания сайтов с 0.</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="800"> - В 15 лет создал и запустил свой первый сайт</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="1000"> - Устроился в IT компанию, но понял что могу развиваться самостоятельно</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="1200"> - Основал образованительную компанию IROH</li>
+					<li class="aboutme__item" data-aos="fade-right" data-aos-duration="1400"> - обучаю людей по созданию сайтов и uiux дизайнов</li>
 				</ul>
 			</div>
 
-			<div class="aboutme__img"></div>
+			<div class="aboutme__img" data-aos="fade-left" data-aos-duration="1500"></div>
 		</div>
 	</section>
 
@@ -85,7 +87,7 @@
 				<h3 class="whatabstract__title title">Что такое Абстрактный дизайн</h3>
 				<p class="whatabstract__text text">Здесь продемонстрированы мои работы</p>
 			</div>
-			<div class="whatabstract__image-block">
+			<div class="whatabstract__image-block" data-aos="fade-up" data-aos-duration="1200">
 					<img class="whatabstract__img-block" src="assets/img/abstract_iroh.webp" alt="abstract iroh">
 					<img class="whatabstract__img-block" src="assets/img/acs.webp" alt="acs iroh">
 					<img class="whatabstract__img-block" src="assets/img/alarm_clock.webp" alt="alarm clock iroh">
@@ -104,14 +106,14 @@
 				<span class="create__text text">очень легко используй готовые уже готовые элементы</span>
 			</div>
 
-	<div class="create__block-img">
+	<div class="create__block-img" data-aos="fade-right" data-aos-duration="1500">
 		<div class="create__block-picture">1</div>
 		<div class="create__block-picture">2</div>
 		<div class="create__block-picture">3</div>
 		<div class="create__block-picture">4</div>
 	</div>
 
-<div class="create__details__container">
+<div class="create__details__container"  data-aos="fade-left" data-aos-duration="1500">
 	<details class="create_button">
 		<summary class="create__summary">tab 1</summary>
 			<p class="create__button-text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam et dictum lectus magna elit, mauris. Congue nec ut vestibulum, condimentum et scelerisque quisque. Elementum ac ac eget turpis id fermentum neque, purus risus. Etiam et ante interdum nisi, pellentesque. Vitae turpis ac mauris eget nec, tortor rutrum. Sed hendrerit sed in feugiat. Non habitant adipiscing volutpat nulla vulputate morbi nisl elit velit. Leo velit tellus in faucibus vulputate eget consect</p>
@@ -242,5 +244,10 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script type="text/javascript" src="assets/js/slick-config.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
 </body>
 </html>	
