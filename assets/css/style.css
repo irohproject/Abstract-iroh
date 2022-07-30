@@ -1,4 +1,34 @@
 @import url("gradients.css");
+
+/* vaio */
+@font-face {
+	font-family: "Vaio";
+	src: url("../fonts/vaio.otf");
+	font-weight: 400;
+}
+/* vaio */
+
+
+
+/* =================================== Product sans ==================================== */
+@font-face {
+	font-family: "Product Sans";
+	src: url("../fonts/Product Sans regular.ttf");
+	font-weight: 400;
+}
+/* =================================== Product sans medium ==================================== */
+@font-face {
+	font-family: "Product Sans";
+	src: url("../fonts/Product Sans medium.ttf");
+	font-weight: 500;
+}
+/* =================================== Product sans bold ==================================== */
+@font-face {
+  font-family: "Product Sans";
+  src: url("../fonts/Product Sans bold.ttf");
+  font-weight: 700;
+}
+/* ================================================== */
 ul {
   list-style-type: none;
 }
@@ -45,7 +75,7 @@ mark {
   color: #939393;
 }
 body {
-  font-family: Product Sans;
+  font-family: "Product Sans";
   font-weight: 400;
   background-repeat: no-repeat;
   background-size: contain;
@@ -61,16 +91,6 @@ body {
 ::selection {
   color: #eee;
   background-color: #fff;
-}
-@font-face {
-  src: url("../fonts/Product Sans Bold.ttf");
-  font-family: Product Sans;
-  font-weight: 700;
-}
-@font-face {
-  src: url("../fonts/Product Sans Regular.ttf");
-  font-family: Product Sans;
-  font-weight: 400;
 }
 [class*="__container"] {
   width: 100%;
@@ -199,6 +219,7 @@ body {
   transition: all 1s ease 0s;
 }
 .slogan {
+	font-family: "Product sans";
   width: 100%;
   height: 100%;
   max-width: 600px;
@@ -215,7 +236,9 @@ body {
   font-size: 7.5rem;
 }
 .slogan__txt {
+	font-family: "Product sans";
   font-size: 1.6rem;
+	font-weight: 500;
   color: #f5f5f5;
 }
 .slogan__btn {
@@ -234,6 +257,7 @@ body {
   color: #fff;
   font-weight: 400;
   cursor: pointer;
+  pointer-events: all;
 }
 .aboutme {
   display: flex;
@@ -248,6 +272,7 @@ body {
   flex-direction: column;
 }
 .aboutme_list {
+	font-weight: 500;
   margin-left: 20px;
 }
 .aboutme__item {
@@ -266,12 +291,14 @@ body {
 .aboutme__text {
   font-size: 1.6rem;
 }
-.aboutme__txt-title {
+.aboutme__title {
+	font-weight: 500;
   font-size: 1.8rem;
 }
 .aboutme__txt-slogan {
   font-weight: 700;
   font-size: 3.2rem;
+  font-family: "Product Sans";
 }
 .aboutme__img {
   height: 344.33px;
@@ -297,6 +324,10 @@ body {
   display: flex;
   flex-direction: column;
   position: relative;
+
+  padding-inline-start: 5%;
+  padding-inline-end: 5%;
+  overflow: visible;
 }
 .whatabstract__title {
   color: #fff;
@@ -319,7 +350,7 @@ body {
 }
 .whatabstract__btn {
   position: absolute;
-  right: 0;
+  right: -5%;
   top: 45%;
   z-index: 10;
   background: 0 0;
@@ -327,7 +358,7 @@ body {
 }
 .whatabstract__btn_left {
   position: absolute;
-  left: 0;
+	left: -5%;
   top: 45%;
   z-index: 10;
   background: 0 0;
@@ -413,7 +444,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  background-image: url(../img/astro__03.svg);
+  background-image: url("../img/astro.svg");
 }
 .create__block-picture_2 {
   background-color: #aeee;
@@ -436,6 +467,14 @@ details :focus {
 details,
 summary {
   display: block;
+}
+@media (max-width: 600px) {
+	.create__block-img {
+		flex: 1 1 100%;
+	}
+	.create__details__container  {
+		flex: 1 1 100%;
+	}
 }
 .hide {
   display: none !important;
