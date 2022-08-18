@@ -277,7 +277,7 @@ body {
 }
 .aboutme__item {
   list-style-type: none;
-  font-size: 1.8rem;
+  font-size: 1.6rem;
   padding: 5px 0;
 }
 @media (max-width: 767.9px) {
@@ -555,8 +555,8 @@ summary {
   position: absolute;
 }
 .bloobs__01 {
-  width: 450px;
-  height: 560px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   left: 450px;
@@ -564,40 +564,40 @@ summary {
   animation: 96s ease 0s infinite normal none running lavalamp;
 }
 .bloobs__02 {
-  width: 543px;
-  height: 560px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   transform: translate(-182px, 736px);
   animation: 96s ease 0s infinite normal none running lavalamp03;
 }
 .bloobs__03 {
-  width: 650px;
-  height: 650px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   transform: translate(315px, 1226px);
   animation: 96s ease 0s infinite normal none running lavalamp03;
 }
 .bloobs__04 {
-  width: 650px;
-  height: 650px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   transform: translateY(188px);
   animation: 96s ease-out 0s infinite normal none running lavalamp02;
 }
 .bloobs__05 {
-  width: 650px;
-  height: 650px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   transform: translate(604px, 1066px);
   animation: 96s ease 0s infinite normal none running lavalamp04;
 }
 .bloobs__06 {
-  width: 650px;
-  height: 650px;
+  width: 250px;
+  height: 250px;
   position: absolute;
   z-index: 1;
   transform: translate(900px, 0);
@@ -713,3 +713,49 @@ summary {
     font-size: 1.8rem;
   }
 }
+
+
+/* css loader */
+.load {
+      width: 100%;
+      height: 100vh;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      position: fixed;
+
+      z-index: 12;
+      
+      background: transparent;
+      backdrop-filter: blur(12px);
+
+    }
+    .bloobs__size {
+      width: 25px;
+    }
+    .bloobs__animation {
+      animation: 1s ease 1s infinite alternate running bloobsLoader;
+    }
+    .bloobs__animation__02 {
+      animation: 1s ease 800ms infinite alternate running bloobsLoader;
+
+    }
+    .bloobs__animation__03 {
+      animation: 1s ease 500ms infinite alternate running bloobsLoader;
+    }
+    @keyframes bloobsLoader {
+      
+      0% {
+        transform: translateY(0);
+
+      }
+      100% {
+        transform: translateY(-10px);
+
+      }
+    }
+    .bloobs {
+      position: absolute;
+    }
