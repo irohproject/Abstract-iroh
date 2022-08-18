@@ -1,3 +1,22 @@
+// const loader = document.querySelector('.load');
+document.body.onload = function() {
+	setTimeout(function() {
+		var loader = document.querySelector(".load")
+		if ( !loader.classList.contains("hide") ) {
+			loader.classList.add("hide")
+		}
+	}, 1000)
+}
+
+// document.body.addEventListener("load", () => {
+// 	setTimeout(function() {
+// 		var loader = document.querySelector(".load")
+// 		if ( !loader.classList.contains("hide") ) {
+// 			loader.classList.contains("hide")
+// 		}
+// 	}, 1000);
+// });
+
 document.addEventListener("DOMContentLoaded", () => {
 	let tabParent = document.querySelector(".create__details__container"),
 	tabs = document.querySelectorAll(".create_button"),
@@ -9,6 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 			item.style.display = 'none';
 		})	
 		tabs.forEach(item => {
+			// this is remove the attribute
 			item.removeAttribute("open")
 		})
 	}
@@ -97,7 +117,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
 	const blur = "15px"
 
-	burgerBtn.addEventListener("click", () => {
+	burgerBtn.addEventListener("click", (e) => {
+		const target = e.target;
+
 		console.info("clicked")
 		// mobile.style.backdropFilter = "	";
 		if (!mobile.classList.contains("blur")) {
@@ -158,4 +180,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+
+
 });
+
