@@ -51,7 +51,6 @@ html {
   font-size: 10px;
 }
 body {
-  font-family: Sans-serif;
   scroll-behavior: smooth;
   position: relative;
 }
@@ -76,7 +75,7 @@ mark {
   color: #939393;
 }
 body {
-  font-family: Sans-serif;
+  font-family: "Product Sans";
   font-weight: 400;
   background-repeat: no-repeat;
   background-size: contain;
